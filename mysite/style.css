@@ -1,0 +1,475 @@
+/* A preload a preload-finish and the loader animation*/
+.preload {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+.preload h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(32, 32, 32);
+  border-right: 16px solid rgb(56, 56, 56);
+  border-bottom: 16px solid rgb(92, 92, 92);
+  border-left: 16px solid rgb(163, 163, 163);
+  width: 6rem;
+  height: 6rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/* preloader animation*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*preload before everithing*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+section {
+  -webkit-box-shadow: -15px -71px 157px -39px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: -15px -71px 157px -39px rgba(0, 0, 0, 0.22);
+  box-shadow: -15px -71px 157px -39px rgba(0, 0, 0, 0.22);
+  height: 100vh !important;
+  transition: 0.5s;
+}
+/*=Own Picture=*/
+img {
+  width: 40%;
+  height: auto;
+}
+/* == First slide ==*/
+
+.cloud1 {
+  right: 0%;
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  top: 25%;
+  transform: translate(100%, -25%);
+  animation: clouds 60s ease-in-out infinite 0s;
+  opacity: 0.3;
+}
+
+.cloud2 {
+  right: 0%;
+  position: absolute;
+  height: 150px;
+  width: 300px;
+  top: 40%;
+  transform: translate(100%, -50%);
+  animation: clouds 50s ease-in-out infinite 1s;
+  opacity: 0.3;
+}
+
+.cloud3 {
+  right: 0%;
+  position: absolute;
+  height: 80px;
+  width: 160px;
+  top: 20%;
+  transform: translate(100%, -75%);
+  animation: clouds 80s ease-in-out infinite 3s;
+  opacity: 0.3;
+}
+
+/*=Keyframe a cloudokhoz=*/
+@keyframes clouds {
+  from {
+    right: 0%;
+  }
+
+  to {
+    right: 130%;
+  }
+}
+.introduce-day {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('picture/sunny\ copy.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+/* == First slide background ==*/
+.dayschool {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('picture/library-869061_1920\ copy.jpg') no-repeat center
+    center fixed;
+  background-size: cover;
+}
+
+.daywork {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('picture/home-office-336373_1920\ copy.jpg') no-repeat center
+    center;
+  background-size: cover;
+}
+
+.light-text {
+  transition: 0.5s;
+}
+
+.dayskills {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('/picture/skills_day.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*==Sticky notes effect==*/
+/* alapértelmezett*/
+.note-1 {
+  background-color: rgb(223, 178, 111);
+  border-radius: 0.5em;
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+
+.note-2,
+.note-1 {
+  background-color: rgb(223, 178, 111);
+  border-radius: 0.5em;
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+
+/*hover effect*/
+.note-1:hover {
+  -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.25);
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+.note-2:hover {
+  -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.25);
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+/* =A fixed navbar miatti padding beállítása= */
+#aboutme {
+  padding-top: 3em;
+}
+
+#school,
+#skills,
+#works,
+#contact {
+  scroll-snap-align: center;
+  margin-top: 0em;
+  padding-top: 2em;
+  height: 100%;
+}
+
+/* Paragrafusok és a headerek, illetve anchor alakítása */
+
+h1 {
+  padding: 1.3em;
+}
+
+h2,
+h3 {
+  font-size: 1.1em;
+}
+
+.me {
+  align-content: center;
+  width: 80%;
+}
+
+/* === Scroll opacity effect ez jQuery attached ===*/
+.scrollDiv {
+  height: 100vh;
+  transition: opacity 700ms ease-in-out;
+  opacity: 0;
+}
+
+.scrollDiv.scrolled {
+  opacity: 1;
+}
+
+/*= Hide/show a skillekhez =*/
+.info {
+  border: none;
+  background-color: rgb(223, 178, 111);
+}
+
+.show-web,
+.show-adobe,
+.show-office,
+.show-quality {
+  display: block;
+}
+
+.show-web h2,
+.show-adobe h2,
+.show-office h2,
+.show-quality h2 {
+}
+
+#web-skills h2,
+#adobe-skills h2,
+#office-skills h2,
+#quality-skills h2 {
+  font-size: 1.5em;
+  font-weight: 1000;
+}
+
+/* == Jobs container ==*/
+.timeline {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.timeline li {
+  position: relative;
+  list-style: none;
+}
+
+.timeline li .item {
+  position: relative;
+  min-height: 60px;
+  padding: 0 2em 2em 3em;
+  margin-left: 20px;
+  border-left: 2px solid;
+}
+
+.timeline li:last-child .item {
+  border-left: 1px solid transparent;
+}
+
+.timeline li .item span {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: black;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 1000;
+  border-radius: 50%;
+}
+
+.timeline li .item h3 {
+  font-size: 1.1em;
+}
+
+.timeline li .item h2 {
+  font-size: 1.2em;
+}
+
+.timeline li .item p {
+  font-size: 0.9em;
+}
+
+.timeline .item .content {
+  background-color: rgb(223, 178, 111);
+  border-radius: 0.5em;
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  padding: 1em;
+}
+
+/* == Icons ==*/
+.icons {
+  margin: 0 auto;
+  width: 50px;
+}
+
+input[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: grey;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: rgb(25, 32, 34);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
+
+input:checked body {
+  background-color: rgb(25, 32, 34);
+}
+
+.footer {
+  background-color: rgb(223, 178, 111);
+}
+
+/* == DARKMODE CLASSOK ==*/
+
+.night {
+  background-color: rgba(15, 15, 15, 1);
+  color: white;
+}
+
+.dark-mode {
+  background-color: rgba(77, 140, 182, 0.9) !important;
+  color: black;
+}
+
+.light-text {
+  color: white;
+}
+
+.nightschool {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('picture/schools-night\ copy.jpg') no-repeat center center
+    fixed;
+  background-size: cover;
+  content: '';
+}
+
+.introduce-night {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('picture/night\ wallpaper\ copy.jpg') no-repeat center center
+    fixed;
+  background-size: cover;
+  content: '';
+}
+
+.nightwork {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('picture/semi-opened-laptop-computer-turned-on-on-table-2047905\ copy.jpg')
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.nightskills {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url('picture/nightskills copy.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

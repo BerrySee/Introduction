@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header id="navbar">
+        <!--NAVBAR: navbar-expand-sm small screennél expand azaza hamburger bar  -->
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+            <!--Navbar container-->
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Curriculum Vitae</a>
+                <input type="checkbox" id="switch" name="theme" class="navbar-brand toggle" />
+                <label for="switch" class="navbar-brand "></label>
+                <!--Navbar toggler azaz az összecsukható navigáció menű-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--A kinyitott navbar -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#aboutme" class="nav-link" id="aboutme-btn">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#schools" class="nav-link" id='schools-btn'>Schools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link" id='resume-btn'>Resumé</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link" id='skills-btn'>Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" id="contact-btn">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Preloader-->
+    <div class="preload">
+        <h1 class="text-center">Loading..</h1>
+        <div class="loader"></div>
+    </div>
+    <!--First section-->
+    <section id="introduce" class="introduce-day">
+        <div class="container h-100  p-5">
+            <div class="row h-50 mb-1 justify-content-between align-items-center">
+                <div class="col-md-12 text-center">
+                    <h1>Welcome to my CV!</h1>
+                </div>
+            </div>
+            <img src="picture/cloud.png" alt="cloud1" class="cloud1">
+            <img src="picture/cloud.png" alt="cloud2" class="cloud2">
+            <img src="picture/cloud.png" alt="cloud3" class="cloud3">
+            <div class="d-flex mt-1 justify-content-center">
+                <a class="btn btn-warning btn-lg info text-dark align-self-center mb-3" href="#aboutme">Let's
+                    get
+                    started!</a>
+            </div>
+            <h2 class="text-center">or</h2>
+            <div class="d-flex mt-5 justify-content-center">
+
+                <a class="btn btn-warning btn-md info text-dark align-self-center"
+                    href="./files/Bogyó Bertalan English_CV.pdf" download>
+                    Download CV in pdf
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="aboutme" class="scrollDiv">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="info col-sm-12 shadow mt-3 info text-center text-dark rounded-lg">
+                    <h1 class="h1">About me</h1>
+                    <p class="letter-spacing-2 ">My name is Bertalan Bogyó. I have graduated as a <strong> Bioengineer
+                        </strong> in <strong> University
+                            Of Szeged </strong> in 2018. I am a self taught web-developer. I have learned <strong> HTML5
+                        </strong> and <strong> CSS </strong> since 2019 october. When I become 25 years old, I decided
+                        to I
+                        would like to learn <strong> web technologies. </strong></p>
+                </div>
+            </div>
+            <div class="d-flex mt-5 justify-content-center">
+                <img class="img-thumbnail mx-auto d-block m-3" src="picture/portre.jpg" alt="It is me">
+            </div>
+        </div>
+
+    </section>
+    <!--Schools-->
+    <section id="schools" class="dayschool">
+        <div class="container h-100 p-4 text-center scrollDiv">
+            <h1 class="dark-text">Schools</h1>
+
+            <div class="row h-25 mb-5  p-1 text-dark justify-content-around">
+                <div class="col-sm-5 h-50 note-1 mb-5 align-self-center">
+                    <h2 class="">2001-2009</h2>
+                    <h3 class=" ">Széchenyi István Primary School</h3>
+                    <p class="">I was a really young boi! </p>
+                </div>
+                <div class="col-sm-5 h-50 note-2 mb-5 align-self-center">
+                    <h2 class="">2009-2013</h2>
+                    <h3 class="">Andrássy Gyula High School</h3>
+                    <p class="">I was a teenager! </p>
+                </div>
+            </div>
+            <div class="row h-25 mt-5  p-1 text-dark justify-content-around">
+                <div class="col-sm-5 h-50 note-1 mt-5 align-self-center">
+                    <h2 class="">2013-2018</h2>
+                    <h3 class="">University Of Szeged</h3>
+                    <p class=""> Bioengineer BSc </p>
+                </div>
+                <div class="col-sm-5 h-50 note-2 mt-5 align-self-center">
+                    <h2 class=" ">2019-2020</h2>
+                    <h3 class=" ">Debrecen University</h3>
+                    <p class="">Quality Engineer Postgradual Degree </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--Jobs-->
+    <section id="resume" class="daywork ">
+        <h1 class="dark-text text-center">My jobs</h1>
+
+        <ul class="timeline scrollDiv">
+            <li>
+                <div class="item">
+                    <span>2016</span>
+                    <div class="content lightmode">
+                        <h2>KaiserFood Kft. CsabaHús</h2>
+                        <h3>Quality Trainee</h3>
+                        <p> Controlling and updating of product specifications </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <span>2018</span>
+                    <div class="content lightmode">
+                        <h2>Givaudan Hungary Kft.</h2>
+                        <h3>Quality Lab Analyst</h3>
+                        <p>Sample registration, sensory examination and analytical inspection</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <span>2019</span>
+                    <div class="content lightmode">
+                        <h2>CsabaMetál Zrt.</h2>
+                        <h3>Quality Assurance Engineer</h3>
+                        <p>BMW project quality assurance engineer. Complaint handling, APQP, PPAP process support.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <!--SKILLEK-->
+    <section id="skills" class="dayskills">
+        <div class=" text-center container-fluid scrollDiv">
+            <h1 class="dark-text">Skills</h1>
+            <div class="container">
+
+                <!--A gombok a skillekhez-->
+
+                <div class=" row">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-sm info btn-block" id="web">Web</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-sm info btn-block" id="adobe">Adobe</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-sm info btn-block" id="office">Office</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-sm info btn-block" id="quality">Quality</button>
+                    </div>
+                </div>
+                <div class="container show-web py-md-4" id="web-skills" style="display: none;">
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>HTML</h2>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 80%; background-color:cornflowerblue !important;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>CSS</h2>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 70%; background-color:cornflowerblue !important;">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mb-2 py-4">
+
+                        <div class="col-md-5">
+                            <h2>Javascript</h2>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 25%; background-color:cornflowerblue !important;">25%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-around mb-2 py-4">
+
+                        <div class="col-md-5">
+                            <h2>Friendly Personality</h2>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info rounded active"
+                                    style="width: 99%; background-color:cornflowerblue !important;">99%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container show-adobe" id="adobe-skills" style="display: none;">
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>Photoshop</h2>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 20%; background-color:cornflowerblue !important;">20%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>Ilustrator</h2>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 30%; background-color:cornflowerblue !important;">30%</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container show-office" id="office-skills" style="display: none;">
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>Word</h2>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 90%; background-color:cornflowerblue !important;">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>Excel</h2>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 70%; background-color:cornflowerblue !important;">70%</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container show-quality" id="quality-skills" style="display: none;">
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>8D-problem solving</h2>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 70%; background-color:cornflowerblue !important;">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>FMEA</h2>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 80%; background-color:cornflowerblue !important;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>5Why</h2>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 80%; background-color:cornflowerblue !important;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mb-2 py-4">
+                        <div class="col-md-5">
+                            <h2>Ishikawa</h2>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="progress">
+                                <div class="progress-bar bg-info  rounded active"
+                                    style="width: 50%; background-color:cornflowerblue !important;">50%</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="footer font-small teal pt-4 text-light">
+        <div class="container-fluid text-center">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-4 ">
+                    <a href="#"
+                        onclick="window.open('https://www.linkedin.com/in/bertalan-bogyó-76336a175/');return false;"><img
+                            src="icons/linkedin.png" alt="linkedin Profile" class="icons">
+                    </a> </div>
+                <div class="col-sm-4">
+                    <a href="#" onclick="window.open('https://www.instagram.com/berci_bogyo/');return false;"><img
+                            src="icons/instagram.png" alt="Instagram Profile" class="icons"></a>
+                </div>
+                <div class="col-sm-4 ">
+                    <a href="#" onclick="window.open('https://www.facebook.com/berci.bogyo');return false;"><img
+                            src="icons/facebook.png" alt="Facebook Profile" class="icons">
+                    </a> </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© <span id="currentDate"></span> Copyright:
+            <h2> Bertalan Bogyó </h2>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNm2ABS1vyqinc4iO28s0Z7djXHKSP-SQ&callback=initMap" async
+    defer>
+</script>
+<script src="js/app.js"></script>
+
+</html>
